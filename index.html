@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>
+        JSON GET API Checker
+    </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src='main.js'></script>
+</head>
+<body>
+
+<nav>
+    <div class="nav-wrapper">
+      <a href="#" id="title" class="brand-logo">API Checker</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="https://twitter.com/volerysandro">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+<div style="width: 80%" class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <textarea id="textarea1" class="materialize-textarea"></textarea>
+          <label for="textarea1">API URL</label>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <a id="checkBtn" style="width: 250px;" class="center hoverable waves-effect waves-light btn">Check!</a>
+        
+  <div class="center card hoverable white" id="output">
+
+    <pre id="json"></pre>
+
+  </div>
+
+    <script src='main.js'></script>
+
+</body>
+
+</html>
+
+<style>
+.brand-logo{
+    margin-left: 100px;
+}
+
+.center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+#output{
+    width: 90%;
+    margin-top: 50px;
+}
+
+#json{
+    text-align: left;
+}
+
+</style>
